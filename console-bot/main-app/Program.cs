@@ -34,7 +34,30 @@ namespace main_app
                      * dla WSZYSTKICH wydziałów
                     */
                 }
-                
+                else if (message.Contains("godziny") ||
+                    message.Contains("<tutaj wpsiz inne slowo kluczowe dla godzin dziekanskich>") ||
+                    message.Contains("<i jeszcze inne słowo kluczowe>"))
+                {
+                    //TODO: GODZINY DZIEKANSKIE
+                    /*
+                     * najblizsze
+                     * wszystkie znane
+                     * ostatnie ktore juz byly
+                     * kalendarz starych i przyszlych dziekanskich godzin
+                    */
+                }
+                else if (message.Contains("event") || message.Contains("wydarz"))
+                {
+                    //Co tutaj się powinno znaleźć?
+                }
+                else if (message.Contains("map"))
+                {
+                    //TODO: LINKI DO MAP
+                    /*
+                     * Stworzyć klasę, która pomoże sprecyzować zapytanie a nastepnie wyświetlić spersonalizowany link do mapy
+                     * https://pooler22.github.io/MapaPL/index.html
+                     */
+                }
                 else if (message == "exit") break; //koniec działania aplikacji
                 else if (message == "co tu wpisać?") Info(); //TODO: Informacje o aplikacji
                 else       Help(); //TODO: wypisywanie komend
