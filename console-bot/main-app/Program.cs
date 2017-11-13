@@ -38,13 +38,7 @@ namespace main_app
                     message.Contains("<tutaj wpsiz inne slowo kluczowe dla godzin dziekanskich>") ||
                     message.Contains("<i jeszcze inne słowo kluczowe>"))
                 {
-                    //TODO: GODZINY DZIEKANSKIE
-                    /*
-                     * najblizsze
-                     * wszystkie znane
-                     * ostatnie ktore juz byly
-                     * kalendarz starych i przyszlych dziekanskich godzin
-                    */
+                    Console.WriteLine("godziny pracy dziekanatu");
                 }
                 else if (message.Contains("event") || message.Contains("wydarz"))
                 {
