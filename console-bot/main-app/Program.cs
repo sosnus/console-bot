@@ -38,7 +38,13 @@ namespace main_app
                     message.Contains("<tutaj wpsiz inne slowo kluczowe dla godzin dziekanskich>") ||
                     message.Contains("<i jeszcze inne słowo kluczowe>"))
                 {
-                    Console.WriteLine("godziny pracy dziekanatu");
+                    Console.WriteLine("poniedziałek, wtorek, piątek: 10:00 - 13:00");
+                    Console.WriteLine("czwartek: 12:00 - 15:00:");
+                    Console.WriteLine("środa: nieczynne");
+                    Console.WriteLine("Okienko 1");
+                    Console.WriteLine("poniedziałek, wtorek, piątek: 10:00 - 15:00     przerwa 13:15 - 13:45");
+                    Console.WriteLine("czwartek: 11:00 - 16:00     przerwa 14:00 - 14:30");
+                    Console.WriteLine("środa: nieczynne");
                 }
                 else if (message.Contains("event") || message.Contains("wydarz"))
                 {
