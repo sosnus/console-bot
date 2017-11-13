@@ -35,8 +35,8 @@ namespace main_app
                     */
                 }
                 else if (message.Contains("godziny") ||
-                    message.Contains("<tutaj wpsiz inne slowo kluczowe dla godzin dziekanskich>") ||
-                    message.Contains("<i jeszcze inne słowo kluczowe>"))
+                    message.Contains("dziekanskie") ||
+                    message.Contains("hours"))
                 {
                     //TODO: GODZINY DZIEKANSKIE
                     /*
@@ -45,10 +45,13 @@ namespace main_app
                      * ostatnie ktore juz byly
                      * kalendarz starych i przyszlych dziekanskich godzin
                     */
+
                 }
                 else if (message.Contains("event") || message.Contains("wydarz"))
                 {
                     //Co tutaj się powinno znaleźć?
+					cout << "What? Łodzkie dni informatyki" << endl << "When? Środa 22.11.2017" << endl << "Where? WEEIA, CTI" << endl;
+
                 }
                 else if (message.Contains("map"))
                 {
@@ -75,7 +78,7 @@ namespace main_app
 
         private static void Help()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("dziekanat/godziny/event/map/exit/co tu wpisać");
         }
     }
 }
