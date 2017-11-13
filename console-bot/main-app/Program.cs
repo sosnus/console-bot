@@ -75,7 +75,7 @@ namespace main_app
 
         private static void Help()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("dziekanat/godziny/event/map/exit/co tu wpisać");
         }
     }
 }
