@@ -62,6 +62,11 @@ namespace main_app
                 {
                     //Może jeszcze jakaś funkcjonalność? :P
                 }
+                else if (message.Contains("wydziały") || message.Contains("wydzialy") || message.Contains("struktura"))
+                {
+                    Console.WriteLine("istniejące wydziały:");
+                    Console.WriteLine("TEST");
+                }
                 else if (message == "exit") break; //koniec działania aplikacji
                 else if (message == "co tu wpisać?") Info(); //TODO: Informacje o aplikacji
                 else       Help(); //TODO: wypisywanie komend
@@ -75,7 +80,7 @@ namespace main_app
 
         private static void Help()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("dziekanat/godziny/event/map/exit/co tu wpisać");
         }
     }
 }
