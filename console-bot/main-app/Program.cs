@@ -58,6 +58,10 @@ namespace main_app
                      * https://pooler22.github.io/MapaPL/index.html
                      */
                 }
+                else if (message.Contains("<wyrazenie>") || message.Contains("<fragment wyrażenia>"))
+                {
+                    //Może jeszcze jakaś funkcjonalność? :P
+                }
                 else if (message == "exit") break; //koniec działania aplikacji
                 else if (message == "co tu wpisać?") Info(); //TODO: Informacje o aplikacji
                 else       Help(); //TODO: wypisywanie komend
