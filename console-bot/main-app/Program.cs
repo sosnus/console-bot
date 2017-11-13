@@ -64,7 +64,18 @@ namespace main_app
                 }
                 else if (message == "exit") break; //koniec działania aplikacji
                 else if (message == "co tu wpisać?") Info(); //TODO: Informacje o aplikacji
-                else       Help(); //TODO: wypisywanie komend
+
+                else if (message.Contains("Jednostki")
+                {
+                    message.Contains("W1")
+                    {
+                        Console.WriteLine("Instytut Inżynierii Materiałowej" /n "Instytut Obrabiarek i Technologii Budowy Maszyn" /n "Instytut Maszyn Przepływowych" /n "Katedra Pojazdów i Podstaw Budowy Maszyn" /n "Katedra Wytrzymałości Materiałów i Konstrukcji" /n "Katedra Dynamiki Maszyn" /n "Katedra Automatyki, Biomechaniki i Mechatroniki" /n "Katedra Technologii Materiałowych i Systemów Produkcji")
+                    }
+
+                }
+
+                else Help(); //TODO: wypisywanie komend
+
             }
         }
 
@@ -73,9 +84,21 @@ namespace main_app
             throw new NotImplementedException();
         }
 
+        private static void Jednostki()
+        {
+            message.Contains("W1")
+                    {
+                Console.WriteLine("Instytut Inżynierii Materiałowej" / n "Instytut Obrabiarek i Technologii Budowy Maszyn" / n "Instytut Maszyn Przepływowych" / n "Katedra Pojazdów i Podstaw Budowy Maszyn" / n "Katedra Wytrzymałości Materiałów i Konstrukcji" / n "Katedra Dynamiki Maszyn" / n "Katedra Automatyki, Biomechaniki i Mechatroniki" / n "Katedra Technologii Materiałowych i Systemów Produkcji")
+                    }
+        }
+
         private static void Help()
         {
             Console.WriteLine("dziekanat/godziny/event/map/exit/co tu wpisać");
         }
+
+
     }
+
+   
 }
