@@ -64,6 +64,7 @@ namespace main_app
                 }
                 else if (message == "exit") break; //koniec działania aplikacji
                 else if (message == "co tu wpisać?") Info(); //TODO: Informacje o aplikacji
+                else if (message == "data") WhatDate(); //TODO: Informacje o aplikacji
                 else       Help(); //TODO: wypisywanie komend
             }
         }
@@ -72,7 +73,10 @@ namespace main_app
         {
             throw new NotImplementedException();
         }
-
+        private static void WhatDate()
+        {
+            Console.WriteLine(DateTime.Now);
+        }
         private static void Help()
         {
             Console.WriteLine("dziekanat/godziny/event/map/exit/co tu wpisać");
